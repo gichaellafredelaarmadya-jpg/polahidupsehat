@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Life with Gichaella</title>
+    <link rel="stylesheet" href="pola.css">
+</head>
+<body>
+
+    <div class="fruit-rain">🍎</div>
+    <div class="fruit-rain">🍍</div>
+    <div class="fruit-rain">🥦</div>
+    <div class="fruit-rain">🍓</div>
+    <div class="fruit-rain">🍇</div>
+    <div class="fruit-rain">🍉</div>
+    <div class="fruit-rain">🍊</div>
+    <div class="fruit-rain">🍋</div>
+
+    <header>
+        <img src="webpola.png" alt="Banner" class="main-banner">
+    </header>
+
+    <nav>
+        <ul class="navbar">
+            <li><button onclick="bukaHalaman('home')" class="nav-btn btn-red">Home</button></li>
+            <li class="dropdown">
+                <button class="nav-btn btn-green">Manfaat ▾</button>
+                <div class="dropdown-content">
+                    <button onclick="bukaHalaman('fisik')">Manfaat Fisik</button>
+                    <button onclick="bukaHalaman('mental')">Kesehatan Mental</button>
+                </div>
+            </li>
+            <li><button onclick="bukaHalaman('penerapan')" class="nav-btn btn-orange">Penerapan</button></li>
+            <li><button onclick="bukaHalaman('pustaka')" class="nav-btn btn-purple">Daftar Pustaka</button></li>
+            <li><button onclick="bukaHalaman('profile')" class="nav-btn btn-blue">Profile</button></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        
+        <section id="home" class="halaman active">
+            <div class="card">
+                <h2 class="rainbow-text">🍓 Pola Dunia Sehat!</h2>
+                <div class="content-flex">
+                    <div class="text-box">
+                        <p>Kesehatan adalah investasi jangka panjang yang paling berharga bagi setiap manusia, terutama di masa remaja yang penuh dengan aktivitas dan perkembangan. Menjalani pola hidup sehat bukan berarti kita harus membatasi diri dari kesenangan, melainkan belajar untuk menyeimbangkan kebutuhan tubuh dengan asupan yang berkualitas. Bayangkan tubuh kita adalah sebuah mesin super canggih yang butuh perawatan rutin agar tidak cepat rusak di kemudian hari.</p>
+                        <p>Melalui website ini, saya ingin mengajak teman-teman semua untuk kembali mencintai alam dengan mengonsumsi buah-buahan segar yang kaya akan vitamin. Pola hidup sehat itu seru, berwarna, dan penuh energi! Mari kita jelajahi langkah-langkah mudah untuk menjaga tubuh tetap bugar dan pikiran tetap tajam setiap harinya.</p>
+                    </div>
+                    <div class="img-wrapper"><img src="buah.jpg" class="content-img"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fisik" class="halaman">
+            <div class="card alternate">
+                <h2 class="rainbow-text">🏃 Manfaat Fisik </h2>
+                <div class="content-flex-reverse">
+                    <div class="text-box">
+                        <p>Manfaat fisik dari berolahraga secara rutin dan menjaga pola makan sangatlah luas. Selain menjaga berat badan tetap ideal, metabolisme tubuh kita akan bekerja lebih efisien dalam membakar energi. Olahraga membantu memperkuat otot jantung dan memperlancar peredaran darah ke seluruh tubuh, termasuk ke otak. Dengan stamina yang prima, kita tidak akan mudah merasa lelah saat belajar di sekolah atau saat mengikuti kegiatan ekstrakurikuler yang padat.</p>
+                    </div>
+                    <div class="img-wrapper"><img src="olahraga.jpg" class="content-img"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="mental" class="halaman">
+            <div class="card">
+                <h2 class="rainbow-text">🧘 Kesehatan Mental</h2>
+                <div class="content-flex">
+                    <div class="text-box">
+                        <p>Kesehatan mental sama pentingnya dengan kesehatan fisik. Meditasi dan teknik pernapasan dapat membantu kita mengelola stres dan rasa cemas akibat tekanan tugas sekolah. Selain itu, asupan buah yang mengandung antioksidan tinggi terbukti mampu menjaga mood kita tetap stabil. Pikiran yang jernih memudahkan kita untuk fokus, berkreativitas, dan menjalin hubungan sosial yang positif dengan orang-orang di sekitar kita.</p>
+                    </div>
+                    <div class="img-wrapper"><img src="meditasi.jpg" class="content-img"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="penerapan" class="halaman">
+            <div class="card alternate">
+                <h2 class="rainbow-text">🍱 Menu Harian</h2>
+                <div class="content-flex-reverse">
+                    <div class="text-box">
+                        <p>Menerapkan pola hidup sehat bisa dimulai dari piring makan kita. Pastikan ada kombinasi sayuran hijau, buah-buahan berwarna cerah, protein, dan karbohidrat kompleks. Hindari makanan yang mengandung pemanis buatan secara berlebihan dan jangan lupa untuk minum air putih minimal 8 gelas sehari. Konsistensi dalam menjaga menu harian adalah kunci untuk mendapatkan tubuh yang sehat secara menyeluruh.</p>
+                    </div>
+                    <div class="img-wrapper"><img src="menu.jpg" class="content-img"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pustaka" class="halaman">
+            <div class="card">
+                <h2 class="rainbow-text">📚 Sumber Referensi</h2>
+                <ul class="link-list">
+                    <li><a href="https://sukoharjonews.com/7-cara-diet-sehat-tanpa-bahayakan-tubuh-beserta-menu-makanan-sehat/" target="_blank">Sukoharjo News - Menu Diet Sehat</a></li>
+                    <li><a href="https://www.alodokter.com/beragam-manfaat-olahraga" target="_blank">Alodokter - Manfaat Olahraga</a></li>
+                    <li><a href="https://www.alodokter.com/inilah-manfaat-meditasi-metta-dan-cara-melakukannya" target="_blank">Alodokter - Meditasi Metta</a></li>
+                    <li><a href="https://www.astronauts.id/blog/kenali-ciri-ciri-buah-yang-segar-harus-kamu-ketahui/" target="_blank">Astronauts - Ciri Buah Segar</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="profile" class="halaman">
+            <div class="card profile-card">
+                <h2 class="rainbow-text">✨ Profile ✨</h2>
+                <div class="profile-content">
+                    <img src="me.jpg" alt="Gichaella" class="profile-img">
+                    <div class="profile-info">
+                        <h3>Gichaella Fredela Armadya</h3>
+                        <p><strong>Kelas:</strong> 92 / <strong>No. Absen:</strong> 15</p>
+                        <p class="motto">"Kesehatan adalah kecantikan yang abadi. Mari mulai hidup sehat dari sekarang!"</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Web TIK Pola Hidup Sehat - Gichaella F. A.</p>
+    </footer>
+
+    <script>
+        function bukaHalaman(idHalaman) {
+            // Sembunyikan semua halaman
+            const semuaHalaman = document.querySelectorAll('.halaman');
+            semuaHalaman.forEach(hal => {
+                hal.classList.remove('active');
+            });
+
+            // Tampilkan halaman yang dipilih
+            document.getElementById(idHalaman).classList.add('active');
+            
+            // Scroll otomatis ke atas
+            window.scrollTo(0, 0);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* RESET & BACKGROUND */
+* { box-sizing: border-box; transition: 0.3s; }
+body {
+    margin: 0; padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-image: url('fruit.png');
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+/* ANIMASI HUJAN BUAH */
+.fruit-rain {
+    position: fixed; top: -50px; font-size: 2rem;
+    z-index: -1; animation: fall linear infinite;
+}
+@keyframes fall { to { transform: translateY(110vh) rotate(360deg); } }
+.fruit-rain:nth-child(1) { left: 5%; animation-duration: 4s; }
+.fruit-rain:nth-child(2) { left: 15%; animation-duration: 6s; }
+.fruit-rain:nth-child(3) { left: 30%; animation-duration: 5s; }
+.fruit-rain:nth-child(4) { left: 50%; animation-duration: 7s; }
+.fruit-rain:nth-child(5) { left: 70%; animation-duration: 4s; }
+.fruit-rain:nth-child(6) { left: 85%; animation-duration: 8s; }
+.fruit-rain:nth-child(7) { left: 40%; animation-duration: 6s; }
+.fruit-rain:nth-child(8) { left: 90%; animation-duration: 5s; }
+
+/* BANNER */
+header { text-align: center; padding: 20px; }
+.main-banner {
+    width: 1280px; height: 200px; max-width: 95%;
+    border-radius: 30px; border: 10px solid #fff;
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #00ffff;
+    object-fit: cover; animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); } }
+
+/* NAVBAR RAME */
+nav {
+    background: rgba(255, 255, 255, 0.9);
+    position: sticky; top: 0; z-index: 1000;
+    padding: 15px; border-bottom: 5px solid #ffcc00;
+}
+.navbar {
+    list-style: none; display: flex; justify-content: center;
+    gap: 15px; margin: 0; padding: 0; flex-wrap: wrap;
+}
+.nav-btn {
+    padding: 15px 25px; border: 3px solid #fff;
+    border-radius: 50px; cursor: pointer; color: white;
+    font-weight: bold; font-size: 1rem; font-family: inherit;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.nav-btn:hover { transform: scale(1.2) rotate(5deg); }
+.btn-red { background: #ff4757; }
+.btn-green { background: #2ed573; }
+.btn-orange { background: #ffa502; }
+.btn-purple { background: #a29bfe; }
+.btn-blue { background: #1e90ff; }
+
+/* DROP DOWN */
+.dropdown { position: relative; }
+.dropdown-content {
+    display: none; position: absolute; background: white;
+    border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.dropdown-content button {
+    display: block; width: 100%; border: none; background: none;
+    padding: 10px 20px; cursor: pointer; font-family: inherit;
+}
+.dropdown-content button:hover { background: #f1f1f1; color: #ff4757; }
+.dropdown:hover .dropdown-content { display: block; }
+
+/* HALAMAN SYSTEM */
+.halaman { display: none; }
+.halaman.active { display: block; animation: zoomIn 0.5s; }
+@keyframes zoomIn { from { opacity: 0; transform: scale(0.8); } to { opacity: 1; transform: scale(1); } }
+
+/* CARDS */
+.container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+.card {
+    background: rgba(255, 255, 255, 0.97); padding: 40px;
+    border-radius: 40px; border: 5px solid #ff6b6b;
+    box-shadow: 20px 20px 0px #ffeb3b;
+}
+.alternate { border-color: #4ecdc4; box-shadow: -20px 20px 0px #a29bfe; }
+
+/* TEXT & IMAGES */
+.rainbow-text {
+    font-size: 2.5rem; text-align: center;
+    animation: rainbow 3s linear infinite;
+}
+@keyframes rainbow {
+    0% { color: #ff4757; } 25% { color: #ffa502; }
+    50% { color: #2ed573; } 75% { color: #1e90ff; }
+    100% { color: #ff4757; }
+}
+
+.content-flex, .content-flex-reverse { display: flex; align-items: center; gap: 30px; margin-top: 20px; }
+.content-flex-reverse { flex-direction: row-reverse; }
+.text-box { flex: 2; font-size: 1.2rem; line-height: 1.6; }
+.img-wrapper { flex: 1; }
+.content-img {
+    width: 100%; border-radius: 20px; border: 5px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.content-img:hover { transform: rotate(5deg) scale(1.1); }
+
+/* PROFILE */
+.profile-content { text-align: center; }
+.profile-img {
+    width: 200px; height: 200px; border-radius: 50%;
+    border: 8px solid #ffcc00; margin-bottom: 20px;
+}
+
+/* FOOTER */
+footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px; }
